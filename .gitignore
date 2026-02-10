@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.sublime-workspace
+
+# PHP
+.env
+composer.lock
+
+# WordPress
+wp-config.php
+wp-content/
+.htaccess
+
+# Node (hvis vi tilføjer build-tools senere)
+node_modules/
+package-lock.json
+dist/
+
+# Misc
+.tmp/
+*.zip
