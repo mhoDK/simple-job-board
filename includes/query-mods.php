@@ -23,12 +23,7 @@ add_action( 'pre_get_posts', function ( $q ) {
 
     if ( $q->get( 'post_type' ) === 'jobopslag' ) {
 
-        // Standard­visning: kun aktive
+        // Alle visninger viser kun aktive (publish) jobopslag
         $q->set( 'post_status', 'publish' );
-
-        // /jobs/alle/ viser også udløbne
-        if ( 'alle' === $q->get( 'sjb_scope' ) ) {
-            $q->set( 'post_status', array( 'publish', 'expired' ) );
-        }
     }
 } );

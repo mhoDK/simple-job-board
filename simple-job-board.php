@@ -17,6 +17,8 @@ require_once SJB_PATH . 'includes/post-types.php';
 require_once SJB_PATH . 'includes/cf7-integration.php';
 require_once SJB_PATH . 'includes/cron.php';
 require_once SJB_PATH . 'includes/query-mods.php';
+require_once SJB_PATH . 'includes/blog-sync.php';
+require_once SJB_PATH . 'includes/templates.php';
 
 /** Aktivering/deaktivering */
 function sjb_activate_plugin() {
